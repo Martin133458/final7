@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    gap: 90px;
+}
+.cart {
+    @media (max-width:970px) {
+        margin-top: 10px;
+    }
+}
+.parametrs {
+    display: none;
+}

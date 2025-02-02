@@ -1,0 +1,10 @@
+.Sale {
+   background-color: #f0f0f0;
+   margin-top: 10px;
+}
+.card {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px 0 20px 0;
+}

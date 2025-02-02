@@ -1,0 +1,171 @@
+.hrum-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hrum-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+  gap: 10px;
+   justify-content: end;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+ 
+  }
+  
+  .hrum-image {
+    width: 50%;
+    height: auto;
+  
+  }
+  
+  .hrum-tag {
+    display: inline-block;
+    margin: 10px ;
+    padding: 5px 25px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 25px;
+    margin: 0 auto;
+    height: auto;
+    
+    
+ 
+  }
+  
+  .hrum-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .hrum-ingredients {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .hrum-price {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .hrum-button {
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   width: 100px;
+   margin: 0 auto;
+   
+    cursor: pointer;
+  }
+ .hrum-details {
+   display: flex;
+   gap: 10px;
+   
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .details {
+   margin-top: 20px; 
+ }
+ .hrum-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hrum-card  {
+    border: 1px solid #ddd;
+    
+    border-radius: 10px;
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+  gap: 10px;
+  
+   
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    img {
+      width: 231px;
+      
+    }
+  }
+  
+  .hrum-image {
+    width: 160px;
+    height: auto;
+  
+  }
+  
+  .hrum-tag {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 50px;
+    margin: 0 auto;
+    
+ 
+  }
+  
+  .hrum-name {
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+   
+  }
+  
+  .hrum-ingredients {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .hrum-price {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .hrum-button {
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   width: 100px;
+   margin: 0 auto;
+   
+    cursor: pointer;
+  }
+ .hrum-details {
+   display: flex;
+ }
+ .hrum-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hrum-button:hover {
+    background-color: #e5533d;
+  }

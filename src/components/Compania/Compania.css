@@ -1,0 +1,102 @@
+.wrapp {
+ display: flex;
+ flex-direction: column;
+}
+.blok {
+    padding: 60px 10px  60px 10px;
+    h1 {
+        font-size: 70px;
+        font-weight: 500;
+        @media (max-width:470px) {
+            font-size: 30px;
+        }
+    }
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        color: grey;
+        @media (max-width:470px) {
+            font-size: 30px;
+        }
+    }
+    span {
+        color: grey;
+    }
+}
+.blok1 {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+  background-color: #006f4c;
+    h1 {
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        padding-left: 10px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        color: white;
+        padding-left: 10px;
+    }
+    span {
+        color: #8affb2;
+    }
+    .blokobj {
+        img {
+            padding-top: 250px;
+        }
+       
+    }
+    @media (max-width:1390px) {
+        flex-direction: column;
+       gap: 0;
+       
+    }
+}
+.blok2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: 70px;
+        font-weight: 500;
+        
+    }
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        
+    }
+    .photo {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "card-1 card-2 card-2"
+          "card-1 card-3 card-3"
+          "card-4 card-4 card-6"
+          "card-5 card-5 card-6";
+      }
+      
+      .card-1 { grid-area: card-1; }
+
+      .card-2 { grid-area: card-2; }
+      
+      
+      .card-3 { grid-area: card-3; }
+      
+      .card-4 { grid-area: card-4; }
+      
+      .card-5 {
+         grid-area: card-5;
+        text-align: center;
+        padding-top: 70px;
+        }
+      
+      .card-6 { grid-area: card-6; }
+      
+}
+  

@@ -1,0 +1,27 @@
+.wrap {
+    @media (max-width:970px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.div4 {
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width:518px) {
+            flex-direction: column;
+        }
+    }
+}
