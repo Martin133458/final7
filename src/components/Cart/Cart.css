@@ -3,6 +3,11 @@
     background-color: orange;
     display: flex;
    height: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-top: 10px;
    margin: 0 auto;
     gap: 10px;
    

@@ -2,16 +2,27 @@
 
 .wrap1 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 30px;
+        padding-right: 100px;
+    }
+    @media (max-width:743px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 .nav {
-    gap: 76px;
+    gap: 50px;
+    
+    @media (max-width:780px) {
+      padding-bottom: 10px;  
+    }
 }
 .cart {
    
-    @media (max-width:970px) {
-        margin-top: 10px;
-    }
 }
 .parametrs {
     display: none;

@@ -20,10 +20,6 @@ const Header = ({ cart }) => {
             
 
             <h1>🍕 Куда пицца</h1>
-            <div className="cart">
-              <Link to="/cart">🛒 {cart?.length || 0} товар(-ов)</Link> {/* Количество товаров */}
-            </div>
-            </div>
             <div className="nav">
             <button className="burger-menu" onClick={toggleMenu}>
         <span className="burger-bar"></span>
@@ -43,6 +39,10 @@ const Header = ({ cart }) => {
               <Link to="/">Меню</Link>
               <Link to="/compania">O нас</Link>
               <Link to="/Sale">Акции</Link>
+            </div>
+            <div className="cart">
+              <Link to="/cart">🛒 {cart?.length || 0} товар(-ов)</Link> {/* Количество товаров */}
+            </div>
             </div>
             
           
