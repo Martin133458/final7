@@ -8,7 +8,7 @@
         font-size: 70px;
         font-weight: 500;
         @media (max-width:470px) {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
     p {
@@ -16,7 +16,7 @@
         font-weight: 400;
         color: grey;
         @media (max-width:470px) {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
     span {
@@ -52,6 +52,14 @@
     @media (max-width:1390px) {
         flex-direction: column;
        gap: 0;
+       h1 {
+        font-size: 50px;
+       }
+       .blokobj{
+        img {
+            padding-top: 0;
+        }
+       }
        
     }
 }
@@ -59,17 +67,43 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    .img {
+        display: none;
+    }
     h1 {
         font-size: 70px;
         font-weight: 500;
         
+        
+        
+    }
+    .h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
     }
     p {
         font-size: 24px;
         font-weight: 400;
         
+    } 
+    @media (max-width:1365px) {
+        
+        .img {
+    
+            display: block;
+            width: 100%;
+        }
+        h1 {
+            font-size: 50px;
+        }
     }
-    .photo {  display: grid;
+}
+
+.photo {
+       display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 10px;
@@ -79,24 +113,30 @@
           "card-1 card-3 card-3"
           "card-4 card-4 card-6"
           "card-5 card-5 card-6";
+
+          
+
+          @media (max-width:1365px) {
+            img {
+                display: none;
+            }
+            .h1 {
+                display: none;
+            }
+
+          }
       }
       
       .card-1 { grid-area: card-1; }
-
-      .card-2 { grid-area: card-2; }
       
+      .card-2 { grid-area: card-2; }
       
       .card-3 { grid-area: card-3; }
       
       .card-4 { grid-area: card-4; }
       
-      .card-5 {
-         grid-area: card-5;
-        text-align: center;
-        padding-top: 70px;
-        }
+      .card-5 { grid-area: card-5; }
       
       .card-6 { grid-area: card-6; }
       
-}
-  
+     

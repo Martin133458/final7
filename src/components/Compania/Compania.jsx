@@ -24,12 +24,13 @@ const Compania = () => {
 
                 <h1>Команда и люди</h1>
                 <p> Нам важно, чтобы сотрудники приходили на работу с удовольствием. Поэтому, мы ежедневно улучшаем рабочую атмосферу, честно платим зарплату по рынку, награждаем лучших и помогаем вырасти каждому, кто трудится с нами.</p>
+                <img className='img' src="/pizza.jpg" alt="" />
                 <div class="photo">
                     <div class="card-1"><img src="/div1-8a99d9eb9585842d34acc4b6aa0ec710.webp" alt="" /></div>
                     <div class="card-2"><img src=" /div2-3a69f461f5ac688f71fb981bddb8da67.webp" alt="" /></div>
                     <div class="card-3"><img src="/div3-5b8a6d74df0b79f94daebf226b93dd81.webp" alt="" /></div>
                     <div class="card-4"><img src="/div4-8121ab8e2836b7930037dc330f5afbb9.webp" alt="" /></div>
-                    <div class="card-5"><h1>🍕 Куда пицца</h1></div>
+                    <div class="card-5"><h1 className='h1'>🍕 Куда пицца</h1></div>
                     <div class="card-6"><img src="/div6-4309a4ca2a1a32e1168e9e7c899b9e37.webp" alt="" /></div>
                  </div>
                 </div>
