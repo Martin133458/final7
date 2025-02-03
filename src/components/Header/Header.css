@@ -1,16 +1,30 @@
 
 
+.h2 {
+  color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  @media (max-width:780px) {
+    display: none;
+    
+  }
+}
+
 .wrap1 {
     display: flex;
     align-items: center;
     justify-content: center;
     h1 {
         font-size: 30px;
-        padding-right: 100px;
+        padding-right: 266px;
     }
-    @media (max-width:743px) {
+    @media (max-width:800px) {
         display: flex;
         flex-direction: column;
+        h1 {
+          padding-right: 0;
+        }
         
     }
 }
@@ -21,9 +35,7 @@
       padding-bottom: 10px;  
     }
 }
-.cart {
-   
-}
+
 .parametrs {
     display: none;
     @media (max-width:620px) {

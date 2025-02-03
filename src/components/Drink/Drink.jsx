@@ -85,7 +85,7 @@ const Drink = () => {
       <div className="drink-list">
         {drinks.map((drink) => (
           <div key={drink.id} className="drink-card">
-            <img src={drink.image} alt={drink.name} />
+            <img data-aos="fade-up" src={drink.image} alt={drink.name} />
             <h2>{drink.name}</h2>
             <p>{drink.ingredients}</p>
             <p>Цена: {drink.price}₽</p>

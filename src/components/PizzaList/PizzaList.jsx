@@ -1,10 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./PizzaList.css";
 import CustomCursor from "../CustomCursor/CustomCursor";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 
 
 const PizzaList = ({ addToCart }) => {
+
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // Длительность анимации в миллисекундах
+        once: false,     // Анимация срабатывает только один раз при скролле
+      });
+    }, []);
+
  
     // Создаем рефы для секций
     const pizzaRef = useRef(null);
@@ -334,7 +344,7 @@ const souse = [
       <div className="pizza-list">
         {pizzas.map((pizza) => (
           <div key={pizza.id} className="pizza-card">
-            <img src={pizza.image} alt={pizza.name} />
+            <img data-aos="fade-up" src={pizza.image} alt={pizza.name} />
             <h2>{pizza.name}</h2>
             <p>{pizza.ingredients}</p>
             <p>Цена: {pizza.price}₽</p>
@@ -360,7 +370,7 @@ const souse = [
       <div className="sushi-list">
         {sushii.map((sushi) => (
           <div key={sushi.id} className="sushi-card">
-            <img src={sushi.image} alt={sushi.name} />
+            <img data-aos="fade-up" src={sushi.image} alt={sushi.name} />
             <h2>{sushi.name}</h2>
             <p>{sushi.ingredients}</p>
             <p>Цена: {sushi.price}₽</p>
@@ -387,7 +397,7 @@ const souse = [
       <div className="sushi-list">
         {hrumm.map((hrum) => (
           <div key={hrum.id} className="sushi-card">
-            <img src={hrum.image} alt={hrum.name} />
+            <img data-aos="fade-up" src={hrum.image} alt={hrum.name} />
             <h2>{hrum.name}</h2>
             <p>{hrum.ingredients}</p>
             <p>Цена: {hrum.price}₽</p>
@@ -414,7 +424,7 @@ const souse = [
       <div className="drink-list">
         {drinks.map((drink) => (
           <div key={drink.id} className="drink-card">
-            <img src={drink.image} alt={drink.name} />
+            <img data-aos="fade-up" src={drink.image} alt={drink.name} />
             <h2>{drink.name}</h2>
             <p>{drink.ingredients}</p>
             <p>Цена: {drink.price}₽</p>
@@ -441,7 +451,7 @@ const souse = [
       <div className="sous-list">
         {souse.map((sous) => (
           <div key={sous.id} className="sous-card">
-            <img src={sous.image} alt={sous.name} />
+            <img data-aos="fade-up" src={sous.image} alt={sous.name} />
             <h2>{sous.name}</h2>
             <p>{sous.ingredients}</p>
             <p>Цена: {sous.price}₽</p>
