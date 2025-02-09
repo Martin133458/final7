@@ -6,7 +6,7 @@ import PizzaList from "./components/PizzaList/PizzaList";
 import Pizza from "./components/Pizza/Pizza";
 import Header from "./components/Header/Header";
 
-import Cart from "./components/Cart/Cart"; // Импортируем компонент корзины
+import Cart from "./components/Cart/Cart";
 import Sushi from "./components/Sushi/Sushi";
 import SushiList from "./components/SushiList/SushiList";
 import Hrum from "./components/Hrum/Hrum";
@@ -21,16 +21,16 @@ import Garant from "./Garant/Garant";
 
 
 const App = () => {
-  const [cart, setCart] = useState([]); // Состояние для корзины
+  const [cart, setCart] = useState([]); 
 
-  // Функция добавления товаров в корзину
+  
   const addToCart = (item) => {
     setCart((prevCart) => [...prevCart, item]);
   };
 
-  // Функция очистки корзины
+  
   const clearCart = () => {
-    setCart([]); // Очищает корзину
+    setCart([]); 
   };
   const longText =
     "Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino’s Pizza! Как у всякого супергероя, у Domino’s Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.";

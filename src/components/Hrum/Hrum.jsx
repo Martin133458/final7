@@ -89,7 +89,7 @@ const Hrum = () => {
             <p>Цена: {hrum.price}₽</p>
             <button
               className="hrum-button"
-              onClick={() => addToCart(hrum)} // Добавление товара в корзину
+              onClick={() => addToCart(hrum)}
             >
               Выбрать
             </button>

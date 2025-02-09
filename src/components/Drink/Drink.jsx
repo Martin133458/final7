@@ -91,7 +91,7 @@ const Drink = () => {
             <p>Цена: {drink.price}₽</p>
             <button
               className="drink-button"
-              onClick={() => addToCart(drink)} // Добавление товара в корзину
+              onClick={() => addToCart(drink)} 
             >
               Выбрать
             </button>

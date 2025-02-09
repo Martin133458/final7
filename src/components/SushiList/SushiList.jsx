@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./SushiList.css";
 
 const SushiList = () => {
-  const { id } = useParams(); // Извлекаем ID из параметров маршрута
+  const { id } = useParams(); 
 
   // Список суши
   const sushii = [
@@ -13,7 +13,7 @@ const SushiList = () => {
       ingredients: "Семга, рис, сыр креметто, соус унаги, креветка, авокадо",
       price: 475,
       tag: "ХИТ",
-      image: "/images/Rectangle 5.png", // Проверьте путь к изображению
+      image: "/images/Rectangle 5.png", 
     },
     {
       id: 1,
@@ -21,14 +21,14 @@ const SushiList = () => {
       ingredients: "Краб, рис, авокадо, икра масаго",
       price: 550,
       tag: "НОВИНКА",
-      image: "/images/Rectangle 6.png", // Проверьте путь к изображению
+      image: "/images/Rectangle 6.png", 
     },
   ];
 
-  // Найти суши по ID
+  
   const sushi = sushii.find((item) => item.id === parseInt(id));
 
-  // Если суши не найдены
+ 
   if (!sushi) {
     return <h2>Суши не найдены</h2>;
   }

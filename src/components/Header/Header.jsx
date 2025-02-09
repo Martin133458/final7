@@ -9,8 +9,8 @@ import "./Header.css";
 const Header = ({ cart }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Длительность анимации в миллисекундах
-      once: false,     // Анимация срабатывает только один раз при скролле
+      duration: 1000,
+      once: false,     
     });
   }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);

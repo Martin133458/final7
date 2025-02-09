@@ -17,13 +17,13 @@
   }
   
   .expandable-text p.collapsed {
-    max-height: 50px; /* Ограничиваем высоту */
-    color: #666; /* Цвет текста в свернутом состоянии */
+    max-height: 50px;
+    color: #666;
   }
   
   .expandable-text p.expanded {
-    max-height: 1000px; /* Достаточно большое значение */
-    color: #000; /* Цвет текста в развернутом состоянии */
+    max-height: 1000px; 
+    color: #000; 
   }
   
   .expandable-text button {

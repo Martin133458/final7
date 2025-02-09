@@ -10,8 +10,8 @@ const PizzaList = ({ addToCart }) => {
 
    useEffect(() => {
       AOS.init({
-        duration: 1000, // Длительность анимации в миллисекундах
-        once: false,     // Анимация срабатывает только один раз при скролле
+        duration: 1000,
+        once: false,     
       });
     }, []);
 
@@ -337,7 +337,7 @@ const souse = [
     <div className="container">
      
 
-      {/* Блок для пиццы */}
+      
       <div ref={pizzaRef} className="section">
       <CustomCursor/>
         <h2>Пицца</h2>

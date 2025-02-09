@@ -4,7 +4,7 @@ import "./CustomCursor.css";
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  // Обновляем позицию курсора
+ 
   useEffect(() => {
     const handleMouseMove = (event) => {
       setPosition({ x: event.clientX, y: event.clientY });

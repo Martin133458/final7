@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./Pizza.css";
 
 const Pizza = () => {
-  const { id } = useParams(); // Извлекаем ID из параметров маршрута
+  const { id } = useParams();
 
   const pizzas = [
     {
@@ -88,7 +88,7 @@ const Pizza = () => {
             <p>Цена: {pizza.price}₽</p>
             <button
               className="pizza-button"
-              onClick={() => addToCart(pizza)} // Добавление товара в корзину
+              onClick={() => addToCart(pizza)} 
             >
               Выбрать
             </button>

@@ -56,7 +56,7 @@ const Sous = () => {
             <p>Цена: {sous.price}₽</p>
             <button
               className="sous-button"
-              onClick={() => addToCart(sous)} // Добавление товара в корзину
+              onClick={() => addToCart(sous)} 
             >
               Выбрать
             </button>

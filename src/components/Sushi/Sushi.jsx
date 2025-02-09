@@ -83,7 +83,7 @@ const Sushi = ({ addToCart }) => {
             <p>Цена: {sushi.price}₽</p>
             <button
               className="sushi-button"
-              onClick={() => addToCart(sushi)} // Добавление товара в корзину
+              onClick={() => addToCart(sushi)}
             >
               Выбрать
             </button>
